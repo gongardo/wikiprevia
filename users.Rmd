@@ -8,5 +8,17 @@ output: pdf_document
 
 ## Users
 
-There are, basically, seven types of 
+There are, basically, seven types of roles to interact with the wiki:
+
+* reader
+* user
+* confirmed user
+* authors
+* editor
+* administrator
+* bureaucrat
+
+### reader
+
+Is a person that accesses to the wiki looking for information about objective priors. He/she is allowed to start new discussions and 
 
