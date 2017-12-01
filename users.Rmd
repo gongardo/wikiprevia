@@ -1,0 +1,12 @@
+---
+title: "Users and their rights in wikiprevia.org"
+author: ""
+date: "01/12/2017"
+output: pdf_document
+---
+
+
+## Users
+
+There are, basically, seven types of 
+
