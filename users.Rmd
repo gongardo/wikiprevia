@@ -1,24 +1,125 @@
 ---
-title: "Users and their rights in wikiprevia.org"
+title: "wikiprevia.org"
 author: ""
-date: "01/12/2017"
+date: "12/01/2017"
 output: pdf_document
 ---
 
+![alt text](./figures/propto.png)
+
+# The structure
+
+`wikiprevia` is currently structured around four main categories:
+
+* *iid Univariate models*, for objective priors for models of the form:
+$$
+x_i\overset{iid}{\sim} f(x\mid \theta),\,\, x_i\in {\cal R},\,{\boldmath \theta}\in {\cal R}^k.
+$$
+
+* *iid Multivariate models*, for objective priors for models of the form:
+$$
+{\mathbf x}_i\overset{iid}{\sim} f({\mathbf x}\mid{\boldmath \theta}),\,\, {\mathbf x}_i\in {\cal R}^m,\,{\boldmath \theta}\in {\cal R}^k.
+$$
+
+* *Structured models*, for objective priors for models with structure (eg. hierarchical or times series).
+
+* *Glossary of terms*, with broadly accesible explanations to the main technical elements in wikiprevia.
+
+The information covered in each of the models is organized on three tabs: `Page`, `Other` and `Discussion`. Depending on the complexity, some of these tabs may be essentially empty.
+
+## The tab `Page` (formal recommendations)
+
+The tab `Page` contains an introductory part with an accurate description of the statistical model, along with an interpretation (if clear) of the parameters. The information about priors is organized in sections that cover the different relevant cases (depending eg. if certain parameters are known). 
+
+Then, for each section, `Page` contain, with the most relevant information contained in a table:
+
+* An Overall Recommended (OR) objective prior, with properties that endorse this recommendation. Properties here provided are based on formal (mathematical) arguments, like for instance: "The OR is the reference prior for the ...", "The OR is the Jeffreys' prior ... ", "The OR is the right Haar ...", "The OR is admissible ..."). Any extra property (eg. is OR proper?).
+
+* Conditions (if feasible with an expression of the posterior distribution) under which the posterior distribution is proper.
+
+* (Optionally) Formal-based alternatives to the OR prior (perhaps for certain popular parameterization).
+
+* (Optionally) Details about how to implement the posterior distribution.
+
+* (Optionally) Proper (vague) versions of the recommended priors.
+
+Bibliographic references are provided for the sentences in the page.
+
+## The tab `Other` (informal recommendations)
+
+Organized by sections created by contributors, this tab is conceived for other objective assignments of the prior distribution:
+
+* based on less formal arguments but that nonetheless, can be reasonably defended.
+
+* References to papers where certain priors have been succesfully used.
+
+* etc.
+
+## The tab `Discussion` (forum)
+
+This part of the wiki gives the possibility for people to ask (and to reply) questions about a great variety of aspects of interest.  
+
+
+# Users and their rights
 
 ## Users
 
 There are, basically, seven types of roles to interact with the wiki:
 
-* reader
-* user
-* confirmed user
-* authors
-* editor
-* administrator
-* bureaucrat
+* `reader`
+* `user`
+* `confirmed user`
+* `author`
+* `editor`
+* `administrator`
+* `bureaucrat`
 
-### reader
+These roles are conceived to promote discussions and questions, but keeping sensible information (formal recommendations) safe.
 
-Is a person that accesses to the wiki looking for information about objective priors. He/she is allowed to start new discussions and 
+### `reader`
+
+Rights: Allowed to view all the contents in wikiprevia.
+
+Who: anyone that accesses the website.
+
+### `user`
+
+Rights: Allowed to participate in `Discussion`, either commenting an existing topic or creating a new topic (eg. to ask questions.)
+
+Who: anyone with an account (no need to introduce email address).
+
+### `confirmed user` (still inactive)
+
+Rights: `user` + allowed to edit contents in `Other` (eg. introducing personal alternatives to formal proposals).
+
+Who: any `user` that has provided guarantees of good usage (eg. through confirmation of email or several access to the webpage).
+
+### `author`
+
+Rights: `confirmed user` + allowed to edit contents in `Page`.
+
+Who: Members of the Objective Bayesian section of ISBA (sending a request to an `administrator').
+
+### `editor`
+
+Rights: `author` +  allowed to create new pages, move pages and revert changes.
+
+Who: Starting team: Jim Berger, Anabel Forte, Gonzalo Garcia-Donato and Jesús Palomo.
+
+### `administrator`
+
+Rights: Administrative staff (like managing accounts, etc).
+
+Who: Gonzalo Garcia-Donato and Jesús Palomo.
+
+### `bureaucrat`
+
+Right: mantainance of the wiki (upgrading software, installing needed plugins, etc).
+
+Who: Gonzalo Garcia-Donato and Jesús Palomo.
+
+
+
+
+
 
