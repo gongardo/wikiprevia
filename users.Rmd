@@ -5,11 +5,12 @@ date: "12/01/2017"
 output: pdf_document
 ---
 
-![alt text](./figures/propto.png)
+\
+![](./figures/propto.png)
 
-# The structure
+# 1. The structure
 
-`wikiprevia` is currently structured around four main categories:
+Contents in `wikiprevia` are currently structured around four main categories:
 
 * *iid Univariate models*, for objective priors for models of the form:
 $$
@@ -25,17 +26,17 @@ $$
 
 * *Glossary of terms*, with broadly accesible explanations to the main technical elements in wikiprevia.
 
-The information covered in each of the models is organized on three tabs: `Page`, `Other` and `Discussion`. Depending on the complexity, some of these tabs may be essentially empty.
+The information covered in each of the models is organized on three tabs: `Page` (formal recommendations), `Other` (informal recommendations) and `Discussion` (forum). Depending on the complexity of the model covered, some of these tabs may be essentially empty.
 
 ## The tab `Page` (formal recommendations)
 
-The tab `Page` contains an introductory part with an accurate description of the statistical model, along with an interpretation (if clear) of the parameters. The information about priors is organized in sections that cover the different relevant cases (depending eg. if certain parameters are known). 
+For a model, the tab `Page` contains an introductory part with an accurate description of the statistical model, along with an interpretation (if clear) of the parameters. The information about priors is organized in sections that cover the different relevant cases (depending eg. if certain parameters are known). 
 
-Then, for each section, `Page` contain, with the most relevant information contained in a table:
+Then, for each section, `Page` contain, with the most relevant information summarized in a table:
 
-* An Overall Recommended (OR) objective prior, with properties that endorse this recommendation. Properties here provided are based on formal (mathematical) arguments, like for instance: "The OR is the reference prior for the ...", "The OR is the Jeffreys' prior ... ", "The OR is the right Haar ...", "The OR is admissible ..."). Any extra property (eg. is OR proper?).
+* An Overall Recommended (OR) objective prior, with properties that endorse this recommendation. Properties here provided are based on formal (mathematical) arguments, like for instance: "The OR is the reference prior for the ...", "The OR is the Jeffreys' prior ... ", "The OR is the right Haar ...", "The OR is admissible ..."). Any other interesting property (eg. is OR proper?) is here provided.
 
-* Conditions (if feasible with an expression of the posterior distribution) under which the posterior distribution is proper.
+* Conditions under which the posterior distribution is proper.  If feasible an expression for the posterior distribution is given.
 
 * (Optionally) Formal-based alternatives to the OR prior (perhaps for certain popular parameterization).
 
@@ -43,7 +44,7 @@ Then, for each section, `Page` contain, with the most relevant information conta
 
 * (Optionally) Proper (vague) versions of the recommended priors.
 
-Bibliographic references are provided for the sentences in the page.
+Bibliographic references are provided explicitly documenting the given properties the sentences.
 
 ## The tab `Other` (informal recommendations)
 
@@ -57,10 +58,9 @@ Organized by sections created by contributors, this tab is conceived for other o
 
 ## The tab `Discussion` (forum)
 
-This part of the wiki gives the possibility for people to ask (and to reply) questions about a great variety of aspects of interest.  
+This part of the wiki gives the possibility for people to ask (and to reply) questions about a great variety of aspects of interest related with the studied model.
 
-
-# Users and their rights
+# 2. Users and their rights
 
 ## Users
 
@@ -92,7 +92,7 @@ Who: anyone with an account (no need to introduce email address).
 
 Rights: `user` + allowed to edit contents in `Other` (eg. introducing personal alternatives to formal proposals).
 
-Who: any `user` that has provided guarantees of good usage (eg. through confirmation of email or several access to the webpage).
+Who: any `user` that has provided guarantees of good usage (eg. through confirmation of email or having acredited several accesses in different days to the webpage).
 
 ### `author`
 
@@ -104,19 +104,41 @@ Who: Members of the Objective Bayesian section of ISBA (sending a request to an 
 
 Rights: `author` +  allowed to create new pages, move pages and revert changes.
 
-Who: Starting team: Jim Berger, Anabel Forte, Gonzalo Garcia-Donato and Jesús Palomo.
+Who: Starting team: Jim Berger, Anabel Forte, Gonzalo García-Donato and Jesús Palomo.
 
 ### `administrator`
 
 Rights: Administrative staff (like managing accounts, etc).
 
-Who: Gonzalo Garcia-Donato and Jesús Palomo.
+Who: Gonzalo García-Donato and Jesús Palomo.
 
 ### `bureaucrat`
 
 Right: mantainance of the wiki (upgrading software, installing needed plugins, etc).
 
-Who: Gonzalo Garcia-Donato and Jesús Palomo.
+Who: Gonzalo García-Donato and Jesús Palomo.
+
+
+# 3. A new entrance
+
+An `author` that wants to add a new model or a new glossary term (or even a new category) should contact an `editor` with a brief proposal. The editor accepts and then creates an empty page with the model and copyes there a template (this has associated a name and a category. For instance "Univariate gamma" in category "iid Univariate models").
+
+The `author` edits the page and adds the relevant contents in tab `page`. Once this is finished, the `editor` creates the tab `other` to allow users to write alternatives.
+
+# 4. Adding content
+
+Technical concepts, directly related to Objective methods,1 º in wikiprevia (like "reference priors" or "Jeffreys independence prior") should be linked to a definition in the category of "Glossary of terms". 
+
+wikiprevia is based on [MediaWiki](www.mediawiki.org) the same software used by [wikipedia](www.wikipedia.org) and to edit content in a page either the `edit source` tab or the (more recommendable) `editor` tab can be used. 
+
+
+The first gives access to an ascii editor with the source code for the contents there. This code has the conventions in MediaWiki which, in many aspects, recalls LaTeX or markdown. 
+
+The `editor` tab opens a visual editor that is much more easy to use.
+
+* To include a formula, use the Insert>Formula button. The syntax is standard LaTeX.
+* To 
+
 
 
 
