@@ -5,8 +5,6 @@ date: "12/01/2017"
 output: pdf_document
 ---
 
-\
-![](./figures/propto.png)
 
 # 1. The structure
 
@@ -127,17 +125,22 @@ The `author` edits the page and adds the relevant contents in tab `page`. Once t
 
 # 4. Adding content
 
-Technical concepts, directly related to Objective methods,1 º in wikiprevia (like "reference priors" or "Jeffreys independence prior") should be linked to a definition in the category of "Glossary of terms". 
+## First considerations
+
+Technical concepts, directly related to Objective Bayesian methods, in wikiprevia (like "reference priors" or "Jeffreys independence prior") should be linked to a definition in the category of "Glossary of terms". If it does not exist, a new entrance in the "Glossary of terms" with the corresponding link must be created. Other definitions or statistical properties must be conveniently linked to [wikipedia](www.wikipedia.org). In general, and to avoid confusing the readers, the same notation in wikipedia is used.
+
+## Editing content
 
 wikiprevia is based on [MediaWiki](www.mediawiki.org) the same software used by [wikipedia](www.wikipedia.org) and to edit content in a page either the `edit source` tab or the (more recommendable) `editor` tab can be used. 
-
 
 The first gives access to an ascii editor with the source code for the contents there. This code has the conventions in MediaWiki which, in many aspects, recalls LaTeX or markdown. 
 
 The `editor` tab opens a visual editor that is much more easy to use.
 
 * To include a formula, use the Insert>Formula button. The syntax is standard LaTeX.
-* To 
+* To ... (finish)
+
+
 
 
 
